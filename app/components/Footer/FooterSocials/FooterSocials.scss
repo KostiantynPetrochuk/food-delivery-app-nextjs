@@ -1,0 +1,17 @@
+.footer-socials {
+  display: flex;
+}
+
+@media screen and (max-width: 900px) {
+  .footer-socials {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer-socials {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+}
