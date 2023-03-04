@@ -1,4 +1,4 @@
-import HeaderNavLink from "../HeaderNavLink/HeaderNavLink";
+import HeaderNavLink from "../HeaderNavLink";
 import "./HeaderNav.scss";
 
 const HeaderNav = () => {

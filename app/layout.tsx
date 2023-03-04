@@ -1,6 +1,6 @@
 import Script from "next/script";
 import "./globals.css";
-import {Header} from "@/app/components/header/header";
+import Header from "./components/Header";
 
 export const metadata = {
   title: "Create Next App",
@@ -8,17 +8,17 @@ export const metadata = {
 };
 
 export default function RootLayout({
-                                     children,
-                                   }: {
-  children: React.ReactNode
+  children,
+}: {
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
-    <Script src="/js/main.js" />
-    <body>
-    <Header />
-    {children}
-    </body>
+      <Script src="/js/main.js" />
+      <body>
+        <Header />
+        {children}
+      </body>
     </html>
   );
 }

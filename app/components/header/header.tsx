@@ -1,14 +1,15 @@
 import Image from "next/image";
-import MobMenu from "@/app/components/header/MobMenu/MobMenu";
-import HeaderNav from "@/app/components/header/HeaderNav/HeaderNav";
-import BasketButton from "@/app/components/header/BasketButton/BasketButton";
-import HeaderMob from "@/app/components/header/HeaderMob/HeaderMob";
-import HeaderInfo from "@/app/components/header/HeaderInfo/HeaderInfo";
-import OrderCallButton from "@/app/components/header/OrderCallButton/OrderCallButton";
-import OrderPhone from "@/app/components/header/OrderPhone/OrderPhone";
+import BasketButton from "./BasketButton";
+import HeaderInfo from "./HeaderInfo";
+import HeaderMob from "./HeaderMob";
+import HeaderNav from "./HeaderNav";
+import MobMenu from "./MobMenu";
+import OrderCallButton from "./OrderCallButton";
+import OrderPhone from "./OrderPhone";
+
 import "./header.scss";
 
-export const Header = () => {
+const Header = () => {
   return (
     <header className="header">
       <MobMenu />
@@ -16,7 +17,13 @@ export const Header = () => {
         <div className="header-top">
           <div className="header-top-left">
             <div className="header-logo-inner">
-              <Image className="header-logo__img" src={"/img/logo.jpg"} alt={""} width={100} height={100} />
+              <Image
+                className="header-logo__img"
+                src={"/img/logo.jpg"}
+                alt={""}
+                width={100}
+                height={100}
+              />
             </div>
             <HeaderInfo city={"Хмельницький"} deliveryTime={"30"} />
           </div>
@@ -36,3 +43,5 @@ export const Header = () => {
     </header>
   );
 };
+
+export default Header;
