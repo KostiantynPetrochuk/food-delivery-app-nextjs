@@ -1,0 +1,109 @@
+.dishes-list-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 460px;
+  width: 250px;
+  box-shadow: 4px 4px 10px rgba(184, 184, 184, 1);
+  padding: 10px;
+  border-radius: 13px;
+  list-style: none;
+  transition: 0.35s;
+}
+.dishes-list-item:hover {
+  box-shadow: 4px 4px 20px rgba(255, 240, 27, 0.6);
+}
+.dishes-list-item__img {
+  max-width: 250px;
+}
+
+.dishes-list-item-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.dishes-list-item-body__title {
+  display: inline-block;
+  font-weight: 800;
+  font-size: 20px;
+  color: #231f20;
+  text-align: center;
+  width: 100%;
+}
+
+.dishes-list-item-ingredients {
+  display: inline-block;
+  color: #686466;
+  font-size: 13px;
+  margin: 15px 0;
+}
+
+.dishes-list-item__price {
+  font-weight: bold;
+  font-size: 22px;
+}
+.dishes-list-item-bot {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* media queries */
+@media screen and (max-width: 1200px) {
+  .dishes-list-item {
+    height: 170px;
+    width: 350px;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+  }
+
+  .dishes-list-item:nth-child(odd) {
+    margin: 0 25px 50px auto;
+  }
+
+  .dishes-list-item:nth-child(even) {
+    margin: 0 auto 50px 25px;
+  }
+
+  .dishes-list-item__img {
+    width: 120px;
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .dishes-list-item:nth-child(odd) {
+    margin: 0 10px 10px auto;
+  }
+
+  .dishes-list-item:nth-child(even) {
+    margin: 0 auto 10px 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .dishes-list-item:nth-child(odd),
+  .dishes-list-item:nth-child(even) {
+    margin: 10px auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .dishes-list-item {
+    flex-direction: column;
+    height: 220px;
+  }
+  .dishes-list-item-body__title {
+    font-size: 18px;
+  }
+  .dishes-list-item-ingredients {
+    font-size: 12px;
+  }
+  .dishes-list-item__img {
+    height: 80px;
+    width: 80px;
+  }
+}
