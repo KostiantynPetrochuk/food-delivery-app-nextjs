@@ -1,12 +1,17 @@
-import {Inter} from "next/font/google";
-import "./normalize.css";
+import BreadCrumbs from "./components/BreadCrumbs";
+import { HomeEvents, HomeInfo, HomeNovelty, HomeDishes } from "./partials/Home";
 
-const inter = Inter({subsets: ["latin"]});
+import "./normalize.css";
+import "./page.scss";
 
 export default function Home() {
   return (
-    <main>
-
+    <main className="main">
+      <BreadCrumbs />
+      <HomeNovelty />
+      <HomeDishes />
+      <HomeEvents />
+      <HomeInfo />
     </main>
   );
 }

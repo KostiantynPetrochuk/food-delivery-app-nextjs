@@ -1,5 +1,5 @@
+import BasketButtonDropdown from "../BasketButtonDropdown";
 import "./BasketButton.scss";
-import BasketButtonDropdown from "@/app/components/header/BasketButtonDropdown/BasketButtonDropdown";
 
 const BasketButton = () => {
   return (
