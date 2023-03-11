@@ -1,8 +1,6 @@
 import BreadCrumbs from "../components/BreadCrumbs";
 import { DishDetailsCard } from "../partials/Dish";
 
-import "./page.scss";
-
 export default function Dish() {
   return (
     <main className="main">
