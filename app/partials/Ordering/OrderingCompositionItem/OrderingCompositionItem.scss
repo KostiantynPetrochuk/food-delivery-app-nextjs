@@ -1,0 +1,39 @@
+.basket-ordering-composition-list-item {
+  display: grid;
+  grid-template-columns: 1fr 0.3fr 0.2fr 0.4fr;
+  padding: 10px 0;
+  align-items: center;
+}
+
+.basket-ordering-composition-list-item__count {
+  color: rgba(35, 31, 32, 0.5);
+  text-align: center;
+}
+.basket-ordering-composition-list-item__total-price {
+  color: #000;
+}
+
+@media screen and (max-width: 600px) {
+  .basket-ordering-composition-list-item {
+    grid-template-areas:
+      "name price"
+      "name count"
+      "total-price total-price";
+    grid-template-columns: 1fr 1fr;
+  }
+  .basket-ordering-composition-list-item__name {
+    grid-area: name;
+  }
+  .basket-ordering-composition-list-item__price {
+    grid-area: price;
+    text-align: end;
+  }
+  .basket-ordering-composition-list-item__count {
+    grid-area: count;
+    text-align: end;
+  }
+  .basket-ordering-composition-list-item__total-price {
+    grid-area: total-price;
+    text-align: end;
+  }
+}

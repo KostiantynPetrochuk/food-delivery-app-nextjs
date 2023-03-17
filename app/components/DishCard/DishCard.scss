@@ -50,6 +50,22 @@
   align-items: center;
 }
 
+.dishes-item__button {
+  height: 36px;
+  width: 126px;
+  background-color: #f7d22d;
+  color: #f3f3f7;
+  border: 1px solid transparent;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: 0.35s;
+}
+
+.dishes-item__button:hover {
+  background-color: #ffdc40;
+  color: #231f20;
+}
+
 /* media queries */
 @media screen and (max-width: 1200px) {
   .dishes-list-item {
