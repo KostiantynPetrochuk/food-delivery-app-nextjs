@@ -1,12 +1,14 @@
 .info {
   background-color: #e3ecf5;
   padding: 56px 0 90px 0;
+
   &-list {
     display: flex;
     list-style: none;
     padding: 0;
     justify-content: space-between;
     flex-wrap: wrap;
+
     @media screen and (max-width: 1200px) {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -19,6 +21,7 @@
       align-items: center;
     }
   }
+
   &-title {
     margin-bottom: 70px;
     font-size: 30px;

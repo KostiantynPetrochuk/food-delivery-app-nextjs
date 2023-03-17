@@ -9,10 +9,12 @@
   &:hover .events-list-item__img {
     transform: scale(1.2);
   }
+
   &__link {
     display: flex;
     border-radius: 13px;
   }
+
   &__img {
     width: 500px;
     border-radius: 13px;
