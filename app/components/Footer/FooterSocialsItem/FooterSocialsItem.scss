@@ -8,10 +8,10 @@
   border: 2px solid #e3ecf5;
   border-radius: 13px;
   margin: 0 5px;
-}
 
-@media screen and (max-width: 600px) {
-  .footer-socials-item {
-    margin: 5px auto;
+  &:nth-child(odd) {
+    @media screen and (max-width: 600px) {
+      margin: 0 0 10px auto;
+    }
   }
 }

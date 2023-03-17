@@ -1,22 +1,26 @@
-/* bread-crumbs */
-.bread-crumbs-inner {
-  margin: 10px 0;
-}
-.bread-crumbs__title {
-  color: #686466;
-  font-weight: bold;
-  text-decoration: none;
-}
-.bread-crumbs__item {
-  display: inline-block;
-  height: 4px;
-  width: 4px;
-  background-color: #ff2e65;
-  border-radius: 3px;
-  vertical-align: middle;
-  margin: 0 5px;
-}
-.bread-crumbs__last {
-  color: #000;
-  font-weight: bold;
+.bread-crumbs {
+  &-inner {
+    margin: 10px 0;
+  }
+
+  &__title {
+    color: #686466;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  &__item {
+    display: inline-block;
+    height: 4px;
+    width: 4px;
+    background-color: #ff2e65;
+    border-radius: 3px;
+    vertical-align: middle;
+    margin: 0 5px;
+  }
+
+  &__last {
+    color: #000;
+    font-weight: bold;
+  }
 }
